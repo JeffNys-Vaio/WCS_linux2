@@ -1,0 +1,101 @@
+   48  sudo apt-get install -y curl unzip
+   49  cd quests/shell/
+   50  ls
+   51  curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+   52  ls
+   53  mkdir real fictiv inhabited
+   54  cd real/
+   55  cd ..
+   56  rm real/ fictiv/ inhabited/
+   57  rmdir real/ fictiv/ inhabited/
+   58  mkdir reelles fictives habitees
+   59  cd reelles/
+   60  mkdir terrestre geantes-gazeuzes panetes-naines
+   61  ls
+   62  cd ../..
+   63  ls
+   64  cd shell/
+   65  ls
+   66  unzip planets.zip 
+   67  ls
+   68  cd planets/
+   69  ls
+   70  mv arrakis.jpeg coruscant.jpeg cybertron.jpeg ../fictives/
+   71  mv earth.jpeg ../reelles/terrestre/
+   72  mv jupiter.jpeg saturn.jpeg ../reelles/geantes-gazeuzes/
+   73  mv uranus.jpeg ../reelles/geantes-gazeuzes/
+   74  mv mars.jpeg mercury.jpeg neptune.jpeg venus.jpeg ../reelles/terrestre/
+   75  rm pluto.jpeg 
+   76  cd ..
+   77  ls reelles/
+   78  ls
+   79  cd reelles/
+   80  ls
+   81  cd terrestre/
+   82  ls
+   83  mv mercury.jpeg neptune.jpeg ../panetes-naines/
+   84  ls
+   85  cd ../..
+   86  ls
+   87  cd planets/
+   88  ls
+   89  cd ..
+   90  ls
+   91  cd habitees/
+   92  ls
+   93  cd ..
+   94  cd fictives/
+   95  ls
+   96  mv cybertron.jpeg coruscant.jpeg ../habitees/
+   97  cd ..
+   98  mv ./reelles/terrestre/earth.jpeg habitees/
+   99  cd habitees/
+  100  ls
+  101  mv ../fictives/arrakis.jpeg ./
+  102  ls
+  103  cd ..
+  104  ls
+  105  rmdir planets/
+  106  cd fictives/
+  107  ls
+  108  cd ..
+  109  ls
+  110  cd habitees/
+  111  ls
+  112  cp arrakis.jpeg coruscant.jpeg cybertron.jpeg ../fictives/
+  113  cp earth.jpeg ../reelles/terrestre/
+  114  ls
+  115  cd ..
+ 
+ 
+ 
+jeff@jeff-Nys-vaio:~/quests/shell$ find ./ *.jpeg
+./
+./planets.zip
+./fruits
+./fruits/grapefruit
+./fruits/banana
+./fruits/apple
+./fruits/kiwi
+./fruits/apricot
+./fictives
+./fictives/arrakis.jpeg
+./fictives/cybertron.jpeg
+./fictives/coruscant.jpeg
+./habitees
+./habitees/arrakis.jpeg
+./habitees/earth.jpeg
+./habitees/cybertron.jpeg
+./habitees/coruscant.jpeg
+./reelles
+./reelles/panetes-naines
+./reelles/panetes-naines/neptune.jpeg
+./reelles/panetes-naines/mercury.jpeg
+./reelles/terrestre
+./reelles/terrestre/mars.jpeg
+./reelles/terrestre/earth.jpeg
+./reelles/terrestre/venus.jpeg
+./reelles/geantes-gazeuzes
+./reelles/geantes-gazeuzes/uranus.jpeg
+./reelles/geantes-gazeuzes/jupiter.jpeg
+./reelles/geantes-gazeuzes/saturn.jpeg
