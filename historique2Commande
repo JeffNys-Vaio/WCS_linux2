@@ -66,6 +66,8 @@
   113  cp earth.jpeg ../reelles/terrestre/
   114  ls
   115  cd ..
+  116  rm /homejeff/quests/shell/planettes/pluton.jpeg
+  117  rmdir /homejeff/quests/shell/planettes/
  
  
  
