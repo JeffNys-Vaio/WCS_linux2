@@ -1,77 +1,55 @@
-   48  sudo apt-get install -y curl unzip
-   49  cd quests/shell/
-   50  ls
-   51  curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
-   52  ls
-   53  mkdir real fictiv inhabited
-   54  cd real/
-   55  cd ..
-   56  rm real/ fictiv/ inhabited/
-   57  rmdir real/ fictiv/ inhabited/
-   58  mkdir reelles fictives habitees
-   59  cd reelles/
-   60  mkdir terrestre geantes-gazeuzes panetes-naines
-   61  ls
-   62  cd ../..
-   63  ls
-   64  cd shell/
-   65  ls
-   66  unzip planets.zip 
-   67  ls
-   68  cd planets/
-   69  ls
-   70  mv arrakis.jpeg coruscant.jpeg cybertron.jpeg ../fictives/
-   71  mv earth.jpeg ../reelles/terrestre/
-   72  mv jupiter.jpeg saturn.jpeg ../reelles/geantes-gazeuzes/
-   73  mv uranus.jpeg ../reelles/geantes-gazeuzes/
-   74  mv mars.jpeg mercury.jpeg neptune.jpeg venus.jpeg ../reelles/terrestre/
-   75  rm pluto.jpeg 
-   76  cd ..
-   77  ls reelles/
-   78  ls
-   79  cd reelles/
-   80  ls
-   81  cd terrestre/
-   82  ls
-   83  mv mercury.jpeg neptune.jpeg ../panetes-naines/
-   84  ls
-   85  cd ../..
-   86  ls
-   87  cd planets/
-   88  ls
-   89  cd ..
-   90  ls
-   91  cd habitees/
-   92  ls
-   93  cd ..
-   94  cd fictives/
-   95  ls
-   96  mv cybertron.jpeg coruscant.jpeg ../habitees/
-   97  cd ..
-   98  mv ./reelles/terrestre/earth.jpeg habitees/
-   99  cd habitees/
-  100  ls
-  101  mv ../fictives/arrakis.jpeg ./
-  102  ls
-  103  cd ..
-  104  ls
-  105  rmdir planets/
-  106  cd fictives/
-  107  ls
-  108  cd ..
-  109  ls
-  110  cd habitees/
-  111  ls
-  112  cp arrakis.jpeg coruscant.jpeg cybertron.jpeg ../fictives/
-  113  cp earth.jpeg ../reelles/terrestre/
-  114  ls
-  115  cd ..
-  116  rm /homejeff/quests/shell/planettes/pluton.jpeg
-  117  rmdir /homejeff/quests/shell/planettes/
+ cd ~/
+ 10  cd quests
+ 11  ls
+ 12  cd shell
+ 13  ls
+ 14  curl -L -o planets.zip curl -L -o planets.zip "https://github.com/WildCodeSchool/quests-resources/blob/master/terminal/planets.zip?raw=true"
+ 15  ls
+ 16  pwd
+ 17  cd quests/
+ 18  cd ~/quests
+ 19  mkdir réelles/ -p fictives/ -p habitées/
+ 20  cd réelles/
+ 21  mkdir terrestres/ -p géantes-gazeuses/ -p planètes-naines/
+ 22  mv planets/earth.jpeg planets/jupiter.jpeg planets/mars.jpeg planets/mercury.jpeg planets/neptune.jpeg planets/pluto.jpeg planets/saturn.jpeg planets/uranus.jpeg planets/venus.jpeg réelles/
+ 23  mv planets/earth.jpeg planets/jupiter.jpeg planets/mars.jpeg planets/mercury.jpeg planets/neptune.jpeg planets/pluto.jpeg planets/saturn.jpeg planets/uranus.jpeg planets/venus.jpeg quests/réelles/
+ 24  cd quests/
+ 25  ~
+ 26  mv planets/earth.jpeg planets/jupiter.jpeg planets/mars.jpeg planets/mercury.jpeg planets/neptune.jpeg planets/pluto.jpeg planets/saturn.jpeg planets/uranus.jpeg planets/venus.jpeg quests/réelles/
+ 27  /quests
+ 28  pwd
+ 29  ~/wcs
+ 30  ~/home/wcs
+ 31  cd home
+ 32  cd /home
+ 33  cd /quests
+ 34  cd /home/quests
+ 35  pwd
+ 36  /quests
+ 37  /home/wcs/quests
+ 38  mv planets/earth.jpeg planets/jupiter.jpeg planets/mars.jpeg planets/mercury.jpeg planets/neptune.jpeg planets/pluto.jpeg planets/saturn.jpeg planets/uranus.jpeg planets/venus.jpeg quests/réelles/
+ 39  mv planets/earth.jpeg planets/jupiter.jpeg planets/mars.jpeg planets/mercury.jpeg planets/neptune.jpeg planets/pluto.jpeg planets/saturn.jpeg planets/uranus.jpeg planets/venus.jpeg réelles/
+ 40  cd réelles
+ 41  mv earth.jpeg mars.jpeg mercury.jpeg venus.jpeg terrestres/
+ 42  mv jupiter.jpeg neptune.jpeg saturn.jpeg uranus.jpeg géantes-gazeuses/
+ 43  mv pluto.jpeg planètes-naines/
+ 44  cd ..
+ 45  cd planets
+ 46  mv arrakis.jpeg coruscant.jpeg cybertron.jpeg ../fictives/
+ 47  cd ..
+ 48  mv fictives/arrakis.jpeg fictives/coruscant.jpeg fictives/cybertron.jpeg ../habitées/
+ 49  mv fictives/arrakis.jpeg fictives/coruscant.jpeg fictives/cybertron.jpeg habitées/
+ 50  cp habitées/arrakis.jpeg habitées/coruscant.jpeg habitées/cybertron.jpeg fictives/
+ 51  cp réelles/terrestres/earth.jpeg habitées/
+ 52  cd réelles/
+ 53  rm -r planètes-naines/
+ 54  cd ..
+ 55  find
+ 56  cd quests
+ 57  find
  
  
- 
-jeff@jeff-Nys-vaio:~/quests/shell$ find ./ *.jpeg
+jeff@jeff-Nys-vaio:~/quests/shell$ find
 .
 ./planets.zip
 ./planets
